@@ -1,0 +1,242 @@
+{% extends 'app/base.html' %} 
+{% load static %}
+ {% block title %}Home{% endblock title %}
+{% block banner_slider %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="3"
+      aria-label="Slide 4"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img
+        src="{% static 'app/images/banner/b1.jpg' %}"
+        class="d-block w-100"
+        height="280"
+        alt="Sữa neel"
+      />
+      <div
+        class="carousel-caption d-none d-md-block bg-success text-white"
+        height="30"
+      >
+        <h5>Sữa neel</h5>
+        <p>Bé hợp sữa mát phá triển nhanh chóng</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img
+        src="{% static 'app/images/banner/milo.jpg' %}"
+        class="d-block w-100"
+        height="280"
+        alt="Sữa milo"
+      />
+      <div
+        class="carousel-caption d-none d-md-block bg-success text-white"
+        height="30"
+      >
+        <h5>Sữa milo</h5>
+        <p>Nạp năng lượng cho một ngày dài.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'app/images/banner/b2.jpg' %}"
+        class="d-block w-100"
+        height="280"
+        alt="Sữa hạt"
+      />
+      <div
+        class="carousel-caption d-none d-md-block bg-success text-white"
+        height="30"
+      >
+        <h5>Sữa hạt</h5>
+        <p>Chứa nhiều chất dinh dưỡng, tốt cho sức khoẻ.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'app/images/banner/b3.jpg' %}"
+        class="d-block w-100"
+        height="280"
+        alt="Trà sữa"
+      />
+      <div class="carousel-caption d-none d-md-block text-white" height="30">
+        <h5>Sữa Dutch Lady</h5>
+        <p>Bổ sung vitamilk và canxi</p>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleDark"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleDark"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock banner_slider %}
+{% block main_content %} 
+ <div class="container">
+    <h2 class="text-center">Products</h2>
+    <br><br>
+    <div class="row container">
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+            <div class="goodnesssec buttermilk smbg">
+                <a href="{% url 'category' 'ML' %}">
+                    <div class="goodnesssecont text-center">
+                        <img class="thumbnail" src="{% static 'app/images/milo.jpg' %}" alt="" class="img-responsive"></a>
+                        <h6><strong>Milo Milk</strong></h6>
+                    </div>
+                    </a>
+                    </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+            <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'VM' %}">
+                <div class="goodnesssecont text-center">
+                    <img class="thumbnail" src="{% static 'app/images/vinamik.jpg' %}" alt="" class="img-responsive"></a>
+                    <h6><strong>Vinamilk</strong></h6>
+                </div>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+            <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'DL' %}">
+                <div class="goodnesssecont text-center">
+                    <img class="thumbnail" src="{% static 'app/images/dalat/1.jpg' %}" alt="" class="img-responsive"></a>
+                    <h6><strong>DaLat Milk</strong></h6>
+                </div>
+                </a>
+                </div>
+            </div>
+            <br><br>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+            <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'DT' %}">
+                <div class="goodnesssecont text-center">
+                    <img class="thumbnail" src="{% static 'app/images/cogaihl.jpg' %}" alt="" class="img-responsive"></a>
+                    <h6><strong>Dutch Lady Milk</strong></h6>
+                </div>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+            <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'LS' %}">
+                <div class="goodnesssecont text-center">
+                    <img class="thumbnail" src="{% static 'app/images/ba-vi-30668.jpg' %}" alt="" class="img-responsive"></a>
+                    <h6><strong>Ba Vì </strong></h6>
+                </div>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+            <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'SH' %}">
+                <div class="goodnesssecont text-center">
+                    <img class="thumbnail" src="{% static 'app/images/banner/suahat.jpg' %}" alt="" class="img-responsive"></a>
+                    <h6><strong>Sữa hạt </strong></h6>
+                </div>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+            <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'YK' %}">
+                <div class="goodnesssecont text-center">
+                    <img class="thumbnail" src="{% static 'app/images/banner/yakult.png' %}" alt="" class="img-responsive"></a>
+                    <h6><strong>Yakult </strong></h6>
+                </div>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+            <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'FM' %}">
+                <div class="goodnesssecont text-center">
+                    <img class="thumbnail" src="{% static 'app/images/fami/1.jpg' %}" alt="" class="img-responsive"></a>
+                    <h6><strong>Fami Canxi</strong></h6>
+                </div>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+            <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'TH' %}">
+                <div class="goodnesssecont text-center">
+                    <img class="thumbnail" src="{% static 'app/images/banner/suaTH.jpg' %}" alt="" class="img-responsive"></a>
+                    <h6><strong>TH True Milk </strong></h6>
+                </div>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+        style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+            <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'NF' %}">
+                <div class="goodnesssecont text-center">
+                    <img class="thumbnail" src="{% static 'app/images/nutifood/1.jpg' %}" alt="" class="img-responsive"></a>
+                    <h6><strong>Nutifood </strong></h6>
+                </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br> 
+ {% endblock main_content %}

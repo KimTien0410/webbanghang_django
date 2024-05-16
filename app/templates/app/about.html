@@ -1,0 +1,154 @@
+{% extends 'app/base.html' %} 
+{% load static %}
+ {% block title %}About{% endblock title %}
+ {% block banner_slider %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="3"
+      aria-label="Slide 4"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img
+        src="{% static 'app/images/banner/b1.jpg' %}"
+        class="d-block w-100"
+        height="280"
+        alt="Sữa neel"
+      />
+      <div
+        class="carousel-caption d-none d-md-block bg-success text-white"
+        height="30"
+      >
+        <h5>Sữa neel</h5>
+        <p>Bé hợp sữa mát phá triển nhanh chóng</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img
+        src="{% static 'app/images/banner/milo.jpg' %}"
+        class="d-block w-100"
+        height="280"
+        alt="Sữa milo"
+      />
+      <div
+        class="carousel-caption d-none d-md-block bg-success text-white"
+        height="30"
+      >
+        <h5>Sữa milo</h5>
+        <p>Nạp năng lượng cho một ngày dài.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'app/images/banner/b2.jpg' %}"
+        class="d-block w-100"
+        height="280"
+        alt="Sữa hạt"
+      />
+      <div
+        class="carousel-caption d-none d-md-block bg-success text-white"
+        height="30"
+      >
+        <h5>Sữa hạt</h5>
+        <p>Chứa nhiều chất dinh dưỡng, tốt cho sức khoẻ.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'app/images/banner/b3.jpg' %}"
+        class="d-block w-100"
+        height="280"
+        alt="Trà sữa"
+      />
+      <div class="carousel-caption d-none d-md-block text-white" height="30">
+        <h5>Sữa Dutch Lady</h5>
+        <p>Bổ sung vitamilk và canxi</p>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleDark"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleDark"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br><br>
+{% endblock banner_slider %}
+ {% block main_content %}
+ <div class="container mt-3">
+ <br>
+ <h2 class="text-center">About Us</h2>
+ <br>
+<div class="row container">
+    <p class="fs-4 text-center"><h2>TẦM NHÌN</h2>
+“Trở thành biểu tượng niềm tin hàng đầu Việt Nam về sản phẩm dinh dưỡng và sức khỏe phục vụ cuộc sống con người“
+<br><br>
+<h2>SỨ MỆNH</h2>
+“Vinamilk cam kết mang đến cho cộng đồng nguồn dinh dưỡng và chất lượng cao cấp hàng đầu bằng chính sự trân trọng, tình yêu và trách nhiệm cao của mình với cuộc sống con người và xã hội”
+Bà Mai Kiều Liên
+<br><br>
+<h1>GIÁ TRỊ CỐT LÕI</h1>
+“Trở thành biểu tượng niềm tin hàng đầu Việt Nam về sản phẩm dinh dưỡng và sức khỏe phục vụ cuộc sống con người “
+Chính trực
+CHÍNH TRỰC
+Liêm chính, Trung thực trong ứng xử và trong tất cả các giao dịch.
+Tôn trọng
+TÔN TRỌNG
+Tôn trọng bản thân, Tôn trọng đồng nghiệp, Tôn trọng Công ty, Tôn trọng đối tác, Hợp tác trong sự tôn trọng.
+Công bằng
+CÔNG BẰNG
+Công bằng với nhân viên, khách hàng, nhà cung cấp và các bên liên quan khác.
+Đạo đức
+ĐẠO ĐỨC
+Tôn trọng các tiêu chuẩn đã được thiết lập và hành động một cách
+đạo đức.
+Tuân thủ
+TUÂN THỦ
+Tuân thủ Luật pháp, Bộ Quy Tắc Ứng Xử và các quy chế, chính sách, quy định của Công ty.
+
+<br><br><h1> TRIẾT LÝ KINH DOANH</h1>
+Vinamilk mong muốn trở thành sản phẩm được yêu thích ở mọi khu vực, lãnh thổ. Vì thế chúng tôi tâm niệm rằng chất lượng và sáng tạo là người bạn đồng hành của Vinamilk. Vinamilk xem khách hàng là trung tâm và cam kết đáp ứng mọi nhu cầu của khách hàng.
+<br><br>
+<h2>Chính sách chất lượng</h2>
+Luôn thỏa mãn và có trách nhiệm với khách hàng bằng cách không ngừng cải tiến, đa dạng hóa sản phẩm và dịch vụ, đảm bảo chất lượng, an toàn vệ sinh thực phẩm với giá cả cạnh tranh, tôn trọng đạo đức kinh doanh và tuân theo luật định.</p>
+</div>
+</div>
+<br><br>
+ {% endblock main_content %}
